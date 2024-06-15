@@ -22,7 +22,7 @@ namespace TryCatchExceptions
                 string notExistingKey = null;
                 int value = Prices[notExistingKey];
 
-                ReadOnlyCollection<string, int> readonlyPrices = new ReadOnlyCollection<string, int>(Prices);
+             //   ReadOnlyCollection<string, int> readonlyPrices = new ReadOnlyCollection<string, int>(Prices);
 
 
 
@@ -47,12 +47,18 @@ namespace TryCatchExceptions
             void argument()
             {
                 string itemName = Console.ReadLine();
+                
+                
+                
+                
+             
                 int price = int.Parse(Console.ReadLine());
 
                 addItem(itemName, price); 
 
                 void addItem(string itemName, int price)
                 {
+
                     Prices.Add(itemName, price);
                 }
             }
