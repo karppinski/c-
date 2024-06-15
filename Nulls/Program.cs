@@ -20,12 +20,6 @@
 
             bool cIsThis = (a.HasValue && b.HasValue) ? (a.Value < b.Value) : false;
 
-            string? error = null;
-            object? errorO = null;
-
-
-//#nullable disable // disable compile time errors
-
             int? t = null;
 
             string? empty = null;
@@ -34,14 +28,11 @@
             Console.WriteLine(t);
             Console.WriteLine(empty);
             Console.WriteLine(emptyO);
-            Console.ReadKey(); 
-
-
-
+            Console.ReadKey();
         }
 
-        
-        
+
+
     }
     
     

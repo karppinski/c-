@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lambdas", "Events\Lambdas.c
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatychExceptions", "TryCatychExceptions\TryCatychExceptions.csproj", "{55288FCA-C868-4488-9083-569BCDA21C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerationIterators", "EnumerationIterators\EnumerationIterators.csproj", "{438921C8-EB77-4988-ADE0-5EFA388F1DED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerationIterators", "EnumerationIterators\EnumerationIterators.csproj", "{438921C8-EB77-4988-ADE0-5EFA388F1DED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nulls", "Nulls\Nulls.csproj", "{7F6643FA-D27A-4408-B1F5-A9E22E29C972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nulls", "Nulls\Nulls.csproj", "{7F6643FA-D27A-4408-B1F5-A9E22E29C972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethNAnnonymousTypes", "ExtensionMethNAnnonymousTypes\ExtensionMethNAnnonymousTypes.csproj", "{0602B1AC-2BED-452A-9A0F-CD327EEBDB81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7F6643FA-D27A-4408-B1F5-A9E22E29C972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6643FA-D27A-4408-B1F5-A9E22E29C972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F6643FA-D27A-4408-B1F5-A9E22E29C972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0602B1AC-2BED-452A-9A0F-CD327EEBDB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0602B1AC-2BED-452A-9A0F-CD327EEBDB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0602B1AC-2BED-452A-9A0F-CD327EEBDB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0602B1AC-2BED-452A-9A0F-CD327EEBDB81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
