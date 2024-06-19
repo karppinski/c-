@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
@@ -86,5 +87,36 @@ namespace PatternsNAttributes
 
         }
 
+        public interface INotyifyPropertyChanged
+        {
+            event PropertyChangedEventHandler PropertyChanged;
+        }
+
+        public delegate void PropertyChangedEventHandler(object sender, PropertyChangedEventHandler e);
+        
+        public class PropertyChangedEventArgs : EventArgs
+        {
+            public PropertyChangedEventArgs(string propertyName)
+            {
+                
+            }
+            public virtual string PropertyName { get; }
+        }
+
+        public class Pfo : INotyifyPropertyChanged
+        {
+            event PropertyChangedEventHandler INotyifyPropertyChanged.PropertyChanged
+            {
+                add
+                {
+                    throw new NotImplementedException();
+                }
+
+                remove
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
     }
 }
