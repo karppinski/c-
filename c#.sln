@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuplesRecords", "TuplesReco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternsNAttributes", "PatternsNAttributes\PatternsNAttributes.csproj", "{52352623-6F85-4F90-8108-D53649C21AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "Dynamic\Dynamic.csproj", "{A7CBB31C-4226-48DF-98E5-ECFD861E8CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encodings", "Dynamic\Encodings.csproj", "{A7CBB31C-4226-48DF-98E5-ECFD861E8CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimes", "DateTimes\DateTimes.csproj", "{17EAAA46-22DE-4C84-BE74-F88892A8E3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingParsing", "FormattingParsing\FormattingParsing.csproj", "{2491E970-25CE-427B-91A2-AD62ED49DCA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{A7CBB31C-4226-48DF-98E5-ECFD861E8CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CBB31C-4226-48DF-98E5-ECFD861E8CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7CBB31C-4226-48DF-98E5-ECFD861E8CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EAAA46-22DE-4C84-BE74-F88892A8E3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EAAA46-22DE-4C84-BE74-F88892A8E3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EAAA46-22DE-4C84-BE74-F88892A8E3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EAAA46-22DE-4C84-BE74-F88892A8E3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2491E970-25CE-427B-91A2-AD62ED49DCA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2491E970-25CE-427B-91A2-AD62ED49DCA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2491E970-25CE-427B-91A2-AD62ED49DCA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2491E970-25CE-427B-91A2-AD62ED49DCA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
