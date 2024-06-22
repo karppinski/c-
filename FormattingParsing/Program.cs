@@ -82,6 +82,26 @@ namespace FormattingParsing
 
 
 
+            Half h = (Half)123.456; // for graphics and processors
+            Console.WriteLine(h); // loss of precision
+
+
+            var c1 = new Complex(2, 3.5);
+            var c2 = new Complex(3, 0);
+
+            Console.WriteLine(c1.Real);
+            Console.WriteLine(c1.Magnitude);
+            Console.WriteLine(c1.Phase);
+            Console.WriteLine(c1.Imaginary);
+
+
+            Complex c3 = Complex.FromPolarCoordinates(1.3, 5);
+
+            Console.WriteLine(c1 + c2);
+            Console.WriteLine(c1 * c2);
+
+
+
 
 
 
