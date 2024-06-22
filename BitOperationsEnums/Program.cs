@@ -36,8 +36,25 @@ namespace BitOperationsEnums
 
             object bs = Enum.ToObject(typeof(BorderSides), 3);
             Console.WriteLine( bs);
+            
+
+            foreach (Enum value in Enum.GetValues (typeof(BorderSides)))
+            {
+                Console.WriteLine(value);
+            }
+
+           foreach (string value in Enum.GetNames (typeof(BorderSides))) // array of strings 
+            {
+                Console.WriteLine(value);
+            }
 
 
+            //Guid g1 = new Guid();
+            Guid g2 = Guid.NewGuid();
+            Guid g1 = Guid.NewGuid();
+            Console.WriteLine(g1.ToString() + " " + g2.ToString());
+
+            Console.WriteLine( (g1 == g2) + "giud");
         }
     }
 }
