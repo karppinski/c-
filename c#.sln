@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormattingParsing", "Format
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitOperationsEnums", "BitOperationsEnums\BitOperationsEnums.csproj", "{4F9B245A-AADA-443A-9F43-3994299A37DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equity", "Equity\Equity.csproj", "{24E2446B-AA04-4E82-93E3-C2EDC4FEC168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equity", "Equity\Equity.csproj", "{24E2446B-AA04-4E82-93E3-C2EDC4FEC168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{28D8D6AA-B1A7-4001-83DB-042A960A74D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{24E2446B-AA04-4E82-93E3-C2EDC4FEC168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24E2446B-AA04-4E82-93E3-C2EDC4FEC168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24E2446B-AA04-4E82-93E3-C2EDC4FEC168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D8D6AA-B1A7-4001-83DB-042A960A74D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D8D6AA-B1A7-4001-83DB-042A960A74D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D8D6AA-B1A7-4001-83DB-042A960A74D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D8D6AA-B1A7-4001-83DB-042A960A74D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
