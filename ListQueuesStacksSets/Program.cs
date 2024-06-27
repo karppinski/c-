@@ -47,6 +47,14 @@ namespace ListQueuesStacksSets
             Console.WriteLine(bits[1]);
 
 
+            var letters = new HashSet<char>("the quick brown fox");
+
+            Console.WriteLine(letters.Contains('t'));
+            Console.WriteLine(letters.Contains('j'));
+
+            foreach (char c in letters) Console.Write(c);
+
+
         }
         static void view(LinkedList<string> list)
         {
