@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListQueuesStacksSets", "ListQueuesStacksSets\ListQueuesStacksSets.csproj", "{44107226-4C99-4AAD-BF05-F565C3699B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionaries", "Dictionaries\Dictionaries.csproj", "{352B15C7-76BE-4883-A390-DE1D097E50E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionaries", "Dictionaries\Dictionaries.csproj", "{352B15C7-76BE-4883-A390-DE1D097E50E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableNEquality", "ImmutableNEquality\ImmutableNEquality.csproj", "{6927C44A-6B72-40A9-AEAE-A36B09362D68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{352B15C7-76BE-4883-A390-DE1D097E50E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{352B15C7-76BE-4883-A390-DE1D097E50E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{352B15C7-76BE-4883-A390-DE1D097E50E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
