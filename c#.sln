@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListQueuesStacksSets", "Lis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionaries", "Dictionaries\Dictionaries.csproj", "{352B15C7-76BE-4883-A390-DE1D097E50E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableNEquality", "ImmutableNEquality\ImmutableNEquality.csproj", "{6927C44A-6B72-40A9-AEAE-A36B09362D68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImmutableNEquality", "ImmutableNEquality\ImmutableNEquality.csproj", "{6927C44A-6B72-40A9-AEAE-A36B09362D68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ Queries", "LINQ Queries\LINQ Queries.csproj", "{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6927C44A-6B72-40A9-AEAE-A36B09362D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
