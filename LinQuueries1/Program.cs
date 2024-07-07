@@ -1,4 +1,7 @@
-﻿namespace LinQuueries1
+﻿using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
+
+namespace LinQuueries1
 {
     internal class Program
     {
@@ -35,9 +38,24 @@
 
 
 
+            Regex wordCounter = new Regex(@"\b(\w|[-'])+\b");
+
+
+            using var dbContext = new NutshellContext();
+
+            var query1 = 
+
 
 
 
         }
     }
+    public class NutshellContext : DbContext
+    {
+
+
+    }
+
+
 }
+
