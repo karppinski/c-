@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImmutableNEquality", "Immut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ Queries", "LINQ Queries\LINQ Queries.csproj", "{1E40B9BF-F07A-4AA6-9CF2-C1858030863C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQuueries1", "LinQuueries1\LinQuueries1.csproj", "{8FF1CEE9-11F5-41BD-B135-6004AA013C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinQuueries1", "LinQuueries1\LinQuueries1.csproj", "{8FF1CEE9-11F5-41BD-B135-6004AA013C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqXml", "LinqXml\LinqXml.csproj", "{8C7BE9AF-45A5-4198-8926-5FE33A75E7B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{8FF1CEE9-11F5-41BD-B135-6004AA013C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF1CEE9-11F5-41BD-B135-6004AA013C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF1CEE9-11F5-41BD-B135-6004AA013C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7BE9AF-45A5-4198-8926-5FE33A75E7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7BE9AF-45A5-4198-8926-5FE33A75E7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7BE9AF-45A5-4198-8926-5FE33A75E7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7BE9AF-45A5-4198-8926-5FE33A75E7B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
