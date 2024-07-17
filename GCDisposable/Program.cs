@@ -11,7 +11,46 @@ namespace GCDisposable
             //stream.Dispose();
 
             //int data = stream.ReadByte();
-      
+
+            try
+            {
+                List<byte[]> memoryKiller = new List<byte[]>();
+                int counter = 0;
+
+
+                while (true)
+                {
+                    memoryKiller.Add(new byte[1024 * 1024]);
+                    Console.WriteLine("Allocated 1 MB");
+
+                    counter++;
+
+                    if (counter % 10 == 0)
+                    {
+                        for (int i = 0; i <5 && memoryKiller.Count >0; i++)
+                        {
+                            memoryKiller.RemoveAt(0);
+                            Console.WriteLine("Removed 1 MB");
+                            if(i == 4)
+                            {
+                                long memoryUsed = GC.GetTotalMemory(true);
+                                Console.WriteLine("Memory used: " + memoryUsed);
+                            }
+                        }
+
+                    }
+                    Console.WriteLine("Memory before collection: " + GC.GetTotalMemory(true));
+                    GC.Collect();
+
+                    Console.WriteLine("Memory after collection: " + GC.GetTotalMemory(true));
+                    Console.WriteLine("Memory collected");
+                }
+            }
+            catch (OutOfMemoryException ex)
+            {
+                Console.WriteLine("Out of memory exception caught: " + ex.Message);
+            }
+
         }
     }
 

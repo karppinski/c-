@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqXml", "LinqXml\LinqXml.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "otherXMLnJSON", "otherXMLnJSON\otherXMLnJSON.csproj", "{D6341303-7E78-464E-AE58-BD773E791A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCDisposable", "GCDisposable\GCDisposable.csproj", "{EA3D8507-E056-4BE2-A50D-B8680947C82B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCDisposable", "GCDisposable\GCDisposable.csproj", "{EA3D8507-E056-4BE2-A50D-B8680947C82B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "Diagnostics\Diagnostics.csproj", "{362818D9-0043-46D9-A694-AA8478F6DE82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{EA3D8507-E056-4BE2-A50D-B8680947C82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3D8507-E056-4BE2-A50D-B8680947C82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3D8507-E056-4BE2-A50D-B8680947C82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362818D9-0043-46D9-A694-AA8478F6DE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362818D9-0043-46D9-A694-AA8478F6DE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362818D9-0043-46D9-A694-AA8478F6DE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362818D9-0043-46D9-A694-AA8478F6DE82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
