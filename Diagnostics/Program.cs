@@ -1,6 +1,7 @@
 ﻿#define TESTMODE
 #define PLAYMODE
 using System.Diagnostics;
+using System.Diagnostics.Tracing;
 
 namespace Diagnostics
 {
@@ -53,9 +54,66 @@ global::System.Console.WriteLine("dotnet problem");
                     Console.WriteLine("   Threads: " + p.Threads.Count);
                 }
 
-            
+            A();
+
+            bool enumerateOverAllCounters = false;
 
 
+            if (enumerateOverAllCounters)
+            {
+                PerformanceCounterCategory[] cats =
+                    PerformanceCounterCategory.GetCategories();
+
+                foreach (PerformanceCounterCategory cat in cats) // over 10k lines
+                {
+                    Console.WriteLine("Category: " + cat.CategoryName);
+
+                    string[] instances = cat.GetInstanceNames();
+                    if (instances.Length == 0)
+                    {
+                        foreach (PerformanceCounter ctr in cat.GetCounters())
+                            Console.WriteLine("   Counter:   " + ctr.CounterName);
+                    }
+
+                    else
+                    {
+                        foreach (string instance in instances)
+                        {
+                            Console.WriteLine("   Instance:   " + instance);
+                            if (cat.InstanceExists(instance))
+                            {
+                                foreach (PerformanceCounter ctr in cat.GetCounters(instance))
+                                {
+                                    Console.WriteLine("   Counter:   " + ctr.CounterName);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        static void A() { B(); }
+        static void B() { C(); }
+        static void C()
+        {
+            StackTrace s = new StackTrace(true);
+
+            Console.WriteLine("Total frames:    " + s.FrameCount);
+            Console.WriteLine("Current method:  " + s.GetFrame(0).GetMethod().Name);
+            Console.WriteLine("Calling method:  " + s.GetFrame(1).GetMethod().Name);
+            Console.WriteLine("Entry method:    " + s.GetFrame(s.FrameCount-1).GetMethod().Name);
+
+            Console.WriteLine("Call Stack:");
+            foreach(StackFrame f in s.GetFrames())
+            {
+                Console.WriteLine(
+                    "    File:   " + f.GetFileName() +
+                    "    Line:   " + f.GetFileLineNumber() + 
+                    "    Col:    " + f.GetFileColumnNumber() +
+                    "    Offset: " + f.GetILOffset() +
+                    "    Method: " + f.GetMethod().Name);
+            }
         }
         public void EnumerateThreads (Process p)
         {
