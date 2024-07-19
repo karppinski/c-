@@ -1,6 +1,7 @@
 ﻿#define TESTMODE
 #define PLAYMODE
 using System.Diagnostics;
+using System.Threading;
 using System.Diagnostics.Tracing;
 
 namespace Diagnostics
@@ -44,7 +45,7 @@ global::System.Console.WriteLine("dotnet problem");
             //    EventLog.CreateEventSource  idk not working
 
 
-            foreach( Process p in Process.GetProcesses())
+            foreach ( Process p in Process.GetProcesses())
 
                 using (p)
                 {
@@ -91,6 +92,38 @@ global::System.Console.WriteLine("dotnet problem");
                     }
                 }
             }
+            string procName = Process.GetCurrentProcess().ProcessName;
+
+            using PerformanceCounter pc = new PerformanceCounter("Process", "Private Bytes", procName);
+            Console.WriteLine(pc.NextValue());
+
+
+            string category = "Nutshell Monitoring";
+
+            string eatenPerMin = " Macadamias easten so far";
+            string tooHard = "Macadamias deemed too hard";
+
+            if (!PerformanceCounterCategory.Exists(category))
+            {
+                CounterCreationDataCollection cd = new CounterCreationDataCollection();
+
+                cd.Add(new CounterCreationData(eatenPerMin,
+                    "Number of macadamias consumed, including shelling time",
+                    PerformanceCounterType.NumberOfItems32));
+
+                cd.Add(new CounterCreationData(tooHard,
+                    "Number of macadamias that will not crack, despite much effort",
+                    PerformanceCounterType.NumberOfItems32));
+
+                PerformanceCounterCategory.Create(category, "Test category",
+                    PerformanceCounterCategoryType.SingleInstance, cd);
+            }
+
+            Stopwatch s = Stopwatch.StartNew();
+            File.WriteAllText("test.txt", new string('*', 30000000));
+            Console.WriteLine(s.Elapsed);
+
+
         }
 
         static void A() { B(); }
