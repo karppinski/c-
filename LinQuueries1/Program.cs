@@ -43,7 +43,6 @@ namespace LinQuueries1
 
             using var dbContext = new NutshellContext();
 
-            var query1 = 
 
 
 

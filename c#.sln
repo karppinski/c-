@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCDisposable", "GCDisposabl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostics", "Diagnostics\Diagnostics.csproj", "{362818D9-0043-46D9-A694-AA8478F6DE82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyAsynchrony", "ConcurrencyAsynchrony\ConcurrencyAsynchrony.csproj", "{4E152412-3CB7-44FD-B481-F77179199915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrencyAsynchrony", "ConcurrencyAsynchrony\ConcurrencyAsynchrony.csproj", "{4E152412-3CB7-44FD-B481-F77179199915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "awaits", "awaits\awaits.csproj", "{ED9B761E-BCDF-4611-9F55-1A9B49B055E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{4E152412-3CB7-44FD-B481-F77179199915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E152412-3CB7-44FD-B481-F77179199915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E152412-3CB7-44FD-B481-F77179199915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9B761E-BCDF-4611-9F55-1A9B49B055E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9B761E-BCDF-4611-9F55-1A9B49B055E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9B761E-BCDF-4611-9F55-1A9B49B055E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9B761E-BCDF-4611-9F55-1A9B49B055E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
