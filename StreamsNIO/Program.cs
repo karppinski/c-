@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System.IO.Pipes;
+using System.Threading;
+using System.Xml.Schema;
 
 namespace StreamsNIO
 {
@@ -34,6 +36,19 @@ namespace StreamsNIO
             FileStream f2 = File.OpenWrite("writeme.tmp"); // write only
             FileStream f3 = File.Create("readWrite.tmp"); // read and write 
 
+            using var ps = new NamedPipeServerStream("pipedream");
+            
+                ps.WaitForConnection();
+                ps.WriteByte(100);
+            Console.WriteLine(ps.ReadByte());
+
+
+            using var sp= new NamedPipeClientStream("pipedream");
+            sp.Connect();
+            Console.WriteLine(sp.ReadByte());
+            sp.WriteByte(200);
+
+
         }
 
         async static void AsyncDemo()
@@ -49,6 +64,17 @@ namespace StreamsNIO
 
                 Console.WriteLine( await s.ReadAsync(block, 0, block.Length));
             }
+        }
+
+        static void AnnonymousPipeClient(string rxID, string txID)
+        {
+            using (var rx = new AnonymousPipeClientStream(PipeDirection.In, rxID)) ;
+            {
+                using (var tx = new AnonymousPipeClientStream(PipeDirection.Out, txID)) ;
+                {
+                    Console.WriteLine("Client received: " + 
+                } }
+
         }
     }
 }
