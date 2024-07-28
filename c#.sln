@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "awaits", "awaits\awaits.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamsNIO", "StreamsNIO\StreamsNIO.csproj", "{3D45A403-F07C-4BCC-8E5C-D481C8FA93E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Streams", "Streams\Streams.csproj", "{DFC3A683-DC35-4A22-9AA5-11BA1B9B433C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Streams", "Streams\Streams.csproj", "{DFC3A683-DC35-4A22-9AA5-11BA1B9B433C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionStreams", "CompressionStreams\CompressionStreams.csproj", "{A81817E2-3EF8-405D-9195-09FC46EF4B0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{DFC3A683-DC35-4A22-9AA5-11BA1B9B433C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFC3A683-DC35-4A22-9AA5-11BA1B9B433C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFC3A683-DC35-4A22-9AA5-11BA1B9B433C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81817E2-3EF8-405D-9195-09FC46EF4B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81817E2-3EF8-405D-9195-09FC46EF4B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81817E2-3EF8-405D-9195-09FC46EF4B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81817E2-3EF8-405D-9195-09FC46EF4B0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
