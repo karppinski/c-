@@ -1,4 +1,6 @@
 ﻿using System.IO.Compression;
+using System.Security.AccessControl;
+using System.Security.Principal;
 
 namespace CompressionStreams
 {
@@ -28,11 +30,38 @@ namespace CompressionStreams
                     w.Write(words[rand.Next(words.Length)] + " ");
 
             Console.WriteLine(new FileInfo("compressed1.bin").Length);
+            Console.WriteLine(new FileInfo("compressed1.bin").LastAccessTime);
+            Console.WriteLine(new FileInfo("compressed1.bin").Attributes);
 
             using (Stream ss = File.OpenRead("compressed1.bin"))
             using (Stream dss = new BrotliStream(ss, CompressionMode.Decompress))
             using (TextReader r = new StreamReader(dss))
                 Console.Write(r.ReadToEnd());
+
+
+            var file = "sectest.txt";
+
+            File.WriteAllText(file, "File security test");
+
+            var sid = new SecurityIdentifier(WellKnownSidType.BuiltinUsersSid, null);
+            string usersAccount = sid.Translate(typeof(NTAccount)).ToString();
+
+            Console.WriteLine($"User : {usersAccount}");
+
+            FileSecurity sec = new FileSecurity(file, AccessControlSections.Owner | AccessControlSections.Group | AccessControlSections.Access);
+
+
+            Console.WriteLine("After create: ");
+
+            ShowSecurity(sec);
+
+            sec.ModifyAccessRule(AccessControlModification.Add,
+                new FileSystemAccessRule(usersAccount, FileSystemRights.Write,
+                AccessControlType.Allow),
+                out bool modified);
+
+            Console.WriteLine("After modify: ");
+            ShowSecurity(sec);
 
         }
 
@@ -72,6 +101,18 @@ namespace CompressionStreams
 
             if (deleteGzip) File.Delete(gzipfile);
 
+        }
+
+        public static void ShowSecurity(FileSecurity sec)
+        {
+            AuthorizationRuleCollection rules = sec.GetAccessRules(true, true, typeof(NTAccount));
+            foreach(FileSystemAccessRule r in rules.Cast<FileSystemAccessRule>()
+                .OrderBy(rule => rule.IdentityReference.Value)) 
+            {
+                Console.WriteLine($"    {r.IdentityReference.Value}");
+
+                Console.WriteLine($"       {r.FileSystemRights}: {r.AccessControlType}");
+            }
         }
     }
 }
