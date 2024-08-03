@@ -12,6 +12,10 @@ namespace Assemblies
             Console.WriteLine(a.FullName);
 
 
+            var executingAssembly = Assembly.GetExecutingAssembly();
+            
+            Console.WriteLine(executingAssembly);
+
 
         }
     }
