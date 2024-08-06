@@ -63,7 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilesNDirectories", "FilesN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assemblies", "Assemblies\Assemblies.csproj", "{79B48F06-9E99-415D-9825-FB2CE3E80197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionNMetadata", "ReflectionNMetadata\ReflectionNMetadata.csproj", "{ED0849EF-912B-481E-B05B-C2A2EC3E52A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionNMetadata", "ReflectionNMetadata\ReflectionNMetadata.csproj", "{ED0849EF-912B-481E-B05B-C2A2EC3E52A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypto", "crypto\crypto.csproj", "{D2136463-FE44-4656-90DE-678264096227}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{ED0849EF-912B-481E-B05B-C2A2EC3E52A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0849EF-912B-481E-B05B-C2A2EC3E52A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0849EF-912B-481E-B05B-C2A2EC3E52A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2136463-FE44-4656-90DE-678264096227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2136463-FE44-4656-90DE-678264096227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2136463-FE44-4656-90DE-678264096227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2136463-FE44-4656-90DE-678264096227}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
