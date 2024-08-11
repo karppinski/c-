@@ -55,6 +55,40 @@ namespace ParallelPrograming
                    Console.WriteLine(c);
            });
 
+            Task parent = Task.Factory.StartNew(() =>
+            {
+                Console.WriteLine("I am a parent");
+
+                Task.Factory.StartNew(() =>
+                {
+                    Console.WriteLine("I am detached");
+                });
+
+                Task.Factory.StartNew(() =>
+                {
+                    Console.WriteLine(" I am a child");
+                }, TaskCreationOptions.AttachedToParent);
+            });
+
+            var cts = new CancellationTokenSource();
+            CancellationToken token = cts.Token;
+            cts.CancelAfter(500);
+
+            Task task = Task.Factory.StartNew(() =>
+            {
+                Thread.Sleep(1000);
+                token.ThrowIfCancellationRequested();
+            }, token);
+
+            try { task.Wait(); }
+            catch (AggregateException ex)
+            {
+                Console.WriteLine( ex.InnerException is TaskCanceledException);
+                Console.WriteLine(task.IsCanceled);
+                Console.WriteLine(task.Status);
+            }
+                
+
             //Parallel.Invoke(
             //    () => new WebClient().DownloadFile("http://linqpad.net", "lp/html"),
             //    () => new WebClient().DownloadFile("mocrosoft.com", "ms.html"));

@@ -69,7 +69,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "crypto", "crypto\crypto.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedThreading", "AdvancedThreading\AdvancedThreading.csproj", "{538CDBD9-A429-49DD-83E3-D3E7CF236BFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelPrograming", "ParallelPrograming\ParallelPrograming.csproj", "{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelPrograming", "ParallelPrograming\ParallelPrograming.csproj", "{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spans", "Spans\Spans.csproj", "{661A87B8-7236-4DB8-89C0-81EA89C0559F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
