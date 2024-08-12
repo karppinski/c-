@@ -71,7 +71,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedThreading", "Advanc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelPrograming", "ParallelPrograming\ParallelPrograming.csproj", "{193FB84F-847A-4FA6-AF97-ADA02B9F95A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spans", "Spans\Spans.csproj", "{661A87B8-7236-4DB8-89C0-81EA89C0559F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spans", "Spans\Spans.csproj", "{661A87B8-7236-4DB8-89C0-81EA89C0559F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interoperability", "interoperability\interoperability.csproj", "{B313CF74-2D88-48E8-BC59-A051399842EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "regxss", "regxss\regxss.csproj", "{212F5E00-97FC-41DB-9E3D-E53F17ED9EBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +223,14 @@ Global
 		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{661A87B8-7236-4DB8-89C0-81EA89C0559F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B313CF74-2D88-48E8-BC59-A051399842EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B313CF74-2D88-48E8-BC59-A051399842EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B313CF74-2D88-48E8-BC59-A051399842EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B313CF74-2D88-48E8-BC59-A051399842EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212F5E00-97FC-41DB-9E3D-E53F17ED9EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212F5E00-97FC-41DB-9E3D-E53F17ED9EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212F5E00-97FC-41DB-9E3D-E53F17ED9EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212F5E00-97FC-41DB-9E3D-E53F17ED9EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

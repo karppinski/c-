@@ -46,7 +46,7 @@ namespace Spans
             unsafe
             {
                 int* numbers2 = stackalloc int[1000];
-                var span3 = new Span<int>(numbers2, 1000);r
+                var span3 = new Span<int>(numbers2, 1000);
             }
         }
     }
